@@ -62,4 +62,4 @@ tidy.df$subject <- as.factor(tidy.df$subject)
 tidy.df$activity <- as.factor(tidy.df$activity)
 
 # Write the tidy data table to a text file
-write.table(tidy.df, file = "Step5_tidy_data_set.txt", row.name = FALSE)
+write.table(tidy.df, file = "Step5-TidyData.txt", row.name = FALSE)
