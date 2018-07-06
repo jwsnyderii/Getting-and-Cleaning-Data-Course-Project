@@ -30,12 +30,17 @@ features$name <- sub("\\(\\)", "", features$name)
 # Read in test datasets
 # read.table will replace non-alpha numeric characters in the column names 
 # with periods (".")
+
+# **Requirement 4** Appropriate labels for the data set with descriptive 
+#                   variable names
 test.x <- read.table("UCI HAR Dataset/test/X_test.txt", 
                      col.names = features$name) 
 test.y <- read.table("UCI HAR Dataset/test/y_test.txt", 
                      col.names = "activity", as.is = TRUE)
 test.subjects <- read.table("UCI HAR Dataset/test/subject_test.txt", 
                             col.names = "subject", as.is = TRUE)
+# **Requirement 2**  Extract only the measurements on the mean and the 
+#                    standard deviation for each measurement
 test.x <- test.x[, grep("mean\\.|mean$|std", names(test.x))]
 #-----------------------------------------------------------------------------#
 
