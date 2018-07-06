@@ -7,7 +7,7 @@ output: html_document
 # Summary
 This document describes the data found in the "Step5-TidyData.txt" file, refered to from here as the data file.
 
-The data file is a whitespace delimited ASCII text file with a header row, 180 observations (rows), and 68 varialbes (columns).  The data file was created by applying the "run_analysis.R" script to the original **Human Activity Recognition Using Smartphones Data Set**
+The data file is a whitespace delimited ASCII text file with a header row, 180 observations (rows), and 68 variables (columns).  The data file was created by applying the "run_analysis.R" script to the original **Human Activity Recognition Using Smartphones Data Set**
 
 From the 'features_info.txt' file included with the [original data set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip):
 
